@@ -15,11 +15,11 @@ export default function Currencies (props) {
 
   return (
     <div className="currencies">
-      {currencies.map((coin) => {
+      {currencies.map((coin, id) => {
         const { name, symbol } = coin;
 
         return (
-          <Link to={`/price/${symbol}`}>
+          <Link key={id} to={`/price/${symbol}`}>
             <h2>{name}</h2>
           </Link>
         );

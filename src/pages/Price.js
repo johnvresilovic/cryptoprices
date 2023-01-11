@@ -28,6 +28,7 @@ export default function Price (props) {
   useEffect(() => {
     getCoin();
   }, []);
+  //The empty array is our dependency array -- if the array is empty, this useEffect will only run once when the component mounts.  Anything we put inside the array will watch for any changes in the dependencies.
 
   // loaded function for when data is fetched
   const loaded = () => {
