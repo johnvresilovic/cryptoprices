@@ -14,13 +14,6 @@ export default function Price (props) {
   //state to hold the coin data
   const [coin, setCoin] = useState("null");
 
-  //function to fetch coin data
-//   const getCoin = async () => {
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     setCoin(data);
-//   };
-
   const getCoin = async () => {
     try{
       const response = await fetch(url);
